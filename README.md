@@ -1,52 +1,39 @@
-## 🛍️ Simple ecommerce cart application [![CircleCI](https://circleci.com/gh/jeffersonRibeiro/react-shopping-cart.svg?style=svg)](https://circleci.com/gh/jeffersonRibeiro/react-shopping-cart)
+## POC (and Blog post?) for a Recommendation Engine using Amazon Personalize
 
-<p align="center">
+[Amazon Personalize](https://aws.amazon.com/personalize/) is a fully managed machine learning service (Recommendation Engine) that uses your data to generate item recommendations for your users. It can also generate user segments based on the users' affinity for certain items or item metadata.
 
-  <img src="./readme-banner.png">
-</p>
+Building **Recommendation Systems** is hard to do well, let Amazon do the heavy lifting for you.
 
-## Basic Overview - [Live Demo](https://react-shopping-cart-67954.firebaseapp.com/)
+This system covers a few common use cases, and although fully managed, you will still need to supply your own data, either through **streaming** ingestion or **batching**. As a high level AI service, you don't need to know any Machine Learning concepts like **model selection**, **hyperparameter optimisation**, **experiment tracking**, or even **inference hosting**, since that is all handled for you.
 
-<p align="left">
+After supplying the data and training the model, the recommendations are then available through **API calls**. 
 
-  <img src="./work-in-the-netherlands.png" width="380" height="90">
-</p>
+For this POC, we will have:
+- [fictitious E-Commerce website repo](https://github.com/jaeyow/react-shopping-cart)
+- [fictitious E-Commerce website live](https://main.d2koe94iemyxa2.amplifyapp.com/)
+- with user [personas simulated like what was done here](https://github.com/aws-samples/retail-demo-store). 
 
-✈️ [Follow Jeremy Akeze](https://www.linkedin.com/in/jeremy-akeze-9542b396/)
+Here are a list of things we want to find out:
 
-This simple shopping cart prototype shows how React with Typescript, React hooks, react Context and Styled Components can be used to build a friendly user experience with instant visual updates and scaleable code in ecommerce applications.
-
-#### Features
-
-- Add and remove products from the floating cart using Context Api
-- Filter products by available sizes using Context Api
-- Responsive design
-
-<!--
-## Getting started
-
-Try playing with the code on CodeSandbox :)
-
-[![Edit app](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/74rykw70qq)
- -->
-
-## Build/Run
-
-#### Requirements
-
-- Node.js
-- NPM
-
+1. Why do we need personalization
+2. How to plug in our own data to it
+3. What recommender recipe to use with what type of problem
+4. How to tune recommendations
+5. How to create campaigns from the AWS Console
+6. How to create campaigns from script
+7. How to do realtime, then batch prediction
+8. How to mix business rules with the predictions
+9. How to handle User cold starts
+10. How to handle Item cold starts
+11. How to integrate with Amazon Pinpoint
+12. How to sell this capability?
+13. ...
 ```javascript
-
 /* First, Install the needed packages */
-npm install
+yarn install
 
 /* Then start the React app */
-npm start
-
-/* To run the tests */
-npm run test
+yarn start
 
 ```
 
@@ -57,7 +44,5 @@ The MIT License (MIT). Please see License File for more information.
 <br/>
 <br/>
 
-<p align="center"><img src="http://www.jeffersonribeiro.com/assets/img/apple-icon-180x180.png" width="35" height="35"/></p>
-<p align="center">
-<sub>A little project by <a href="http://www.jeffersonribeiro.com/">Jefferson Ribeiro</a></sub>
+<sub>Adapted with thanks from <a href="http://www.jeffersonribeiro.com/">Jefferson Ribeiro</a></sub>
 </p>
