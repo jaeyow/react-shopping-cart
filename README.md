@@ -10,8 +10,7 @@ After supplying the data and training the model, the recommendations are then av
 
 For this POC, we will have:
 - [fictitious E-Commerce website repo](https://github.com/jaeyow/react-shopping-cart)
-- [fictitious E-Commerce website live](https://main.d2koe94iemyxa2.amplifyapp.com/)
-- with user [personas simulated like what was done here](https://github.com/aws-samples/retail-demo-store). 
+- with user personas, items and interactions [simulated like what was done here](https://github.com/aws-samples/retail-demo-store).  
 
 Here are a list of things we want to find out:
 
