@@ -35,3 +35,17 @@ export const MainHeader = styled.main`
   justify-content: end;
   padding: 0 15px;
 `;
+
+export const Title = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  font-size: 1.5rem;
+  font-style: bold;
+`;
+
+export const CevoLogo = styled.img`
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+`;
