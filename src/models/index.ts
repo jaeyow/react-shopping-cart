@@ -1,31 +1,31 @@
-export interface IProduct {
-  id: number;
-  sku: number;
-  title: string;
-  description: string;
-  availableSizes: string[];
-  style: string;
-  price: number;
-  installments: number;
-  currencyId: string;
-  currencyFormat: string;
-  isFreeShipping: boolean;
+export type IProduct = {
+    id: number;
+    sku: number;
+    title: string;
+    description: string;
+    availableSizes: string[];
+    style: string;
+    price: number;
+    installments: number;
+    currencyId: string;
+    currencyFormat: string;
+    isFreeShipping: boolean;
 }
 
-export interface ICartProduct extends IProduct {
-  quantity: number;
+export type ICartProduct = {
+    quantity: number;
+} & IProduct
+
+export type ICartTotal = {
+    productQuantity: number;
+    installments: number;
+    totalPrice: number;
+    currencyId: string;
+    currencyFormat: string;
 }
 
-export interface ICartTotal {
-  productQuantity: number;
-  installments: number;
-  totalPrice: number;
-  currencyId: string;
-  currencyFormat: string;
-}
-
-export interface IGetProductsResponse {
-  data: {
-    products: IProduct[];
-  };
+export type IGetProductsResponse = {
+    data: {
+        products: IProduct[];
+    };
 }

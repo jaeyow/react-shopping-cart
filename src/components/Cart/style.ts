@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled from 'styled-components/macro'
 
 export const CartButton = styled.button`
   border: 0;
@@ -22,10 +22,10 @@ export const CartButton = styled.button`
   &:hover {
     filter: brightness(85%);
   }
-`;
+`
 
-interface IContainer {
-  isOpen: boolean;
+type IContainer = {
+    isOpen: boolean;
 }
 export const Container = styled.div<IContainer>`
   position: fixed;
@@ -42,11 +42,11 @@ export const Container = styled.div<IContainer>`
   ${CartButton} {
     left: ${({ isOpen }) => (isOpen ? '0' : '-50px')};
     background-color: ${({ theme, isOpen }) =>
-      isOpen ? theme.colors.black : theme.colors.primary};
+        isOpen ? theme.colors.black : theme.colors.primary};
   }
 
   @media only screen and (min-width: ${({ theme: { breakpoints } }) =>
-      breakpoints.tablet}) {
+        breakpoints.tablet}) {
     width: 450px;
     right: ${({ isOpen }) => (isOpen ? '0' : '-450px')};
 
@@ -54,10 +54,10 @@ export const Container = styled.div<IContainer>`
       left: -50px;
     }
   }
-`;
+`
 
-interface ICartIcon {
-  large?: boolean;
+type ICartIcon = {
+    large?: boolean;
 }
 export const CartIcon = styled.div<ICartIcon>`
   width: ${({ large }) => (large ? '60px' : '50px')};
@@ -72,7 +72,7 @@ export const CartIcon = styled.div<ICartIcon>`
   background-position: center;
 
   background-size: 50%;
-`;
+`
 
 export const CartQuantity = styled.div`
   display: inline-block;
@@ -88,7 +88,7 @@ export const CartQuantity = styled.div`
   position: absolute;
   bottom: 0;
   right: 5px;
-`;
+`
 
 export const CartContent = styled.div`
   height: 100%;
@@ -107,27 +107,27 @@ export const CartContent = styled.div`
       background-color: #0c0b10;
     }
   }
-`;
+`
 
 export const CartContentHeader = styled.div`
   color: #ececec;
   box-sizing: border-box;
   text-align: center;
   padding: 45px 0;
-`;
+`
 
 export const HeaderTitle = styled.span`
   font-weight: bold;
   font-size: 1.2em;
   vertical-align: middle;
-`;
+`
 
 export const Sub = styled.p`
   width: 20%;
   color: #5b5a5e;
   vertical-align: middle;
   display: inline-block;
-`;
+`
 
 export const SubPrice = styled.div`
   width: 80%;
@@ -135,17 +135,17 @@ export const SubPrice = styled.div`
   color: #5b5a5e;
   vertical-align: middle;
   display: inline-block;
-`;
+`
 
 export const SubPriceValue = styled.p`
   color: ${({ theme }) => theme.colors.secondary};
   font-size: 22px;
   margin: 0;
-`;
+`
 
 export const SubPriceInstallment = styled.p`
   margin: 0;
-`;
+`
 
 export const CheckoutButton = styled.button`
   width: 100%;
@@ -168,7 +168,7 @@ export const CheckoutButton = styled.button`
   &:hover {
     background-color: #000;
   }
-`;
+`
 
 export const CartFooter = styled.div`
   box-sizing: border-box;
@@ -190,4 +190,4 @@ export const CartFooter = styled.div`
     left: 0;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent);
   }
-`;
+`

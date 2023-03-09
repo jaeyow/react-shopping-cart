@@ -1,12 +1,12 @@
-import * as S from './style';
+import * as S from './style'
 
 const Loader = () => (
   <S.Container>
-    <div />
-    <div />
-    <div />
-    <div />
-  </S.Container>
-);
+      <div />
+      <div />
+      <div />
+      <div />
+    </S.Container>
+)
 
-export default Loader;
+export default Loader

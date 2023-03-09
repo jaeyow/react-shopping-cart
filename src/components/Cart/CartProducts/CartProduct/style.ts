@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled from 'styled-components/macro'
 
 export const Container = styled.div`
   position: relative;
@@ -16,23 +16,23 @@ export const Container = styled.div`
     top: 0;
     left: 5%;
   }
-`;
+`
 
 export const Details = styled.div`
   width: 57%;
   display: inline-block;
   vertical-align: middle;
-`;
+`
 
 export const Title = styled.p`
   color: #ececec;
   margin: 0;
-`;
+`
 
 export const Desc = styled.p`
   color: #5b5a5e;
   margin: 0;
-`;
+`
 
 export const Price = styled.div`
   display: inline-block;
@@ -40,7 +40,7 @@ export const Price = styled.div`
   color: ${({ theme }) => theme.colors.secondary};
   text-align: right;
   width: 25%;
-`;
+`
 
 export const DeleteButton = styled.button`
   width: 16px;
@@ -64,7 +64,7 @@ export const DeleteButton = styled.button`
   &:hover {
     background-position-x: -17px;
   }
-`;
+`
 
 export const ChangeQuantity = styled.button`
   color: #b7b7b7;
@@ -80,7 +80,7 @@ export const ChangeQuantity = styled.button`
   &:disabled {
     opacity: 0.2;
   }
-`;
+`
 
 export const Image = styled.img`
   display: inline-block;
@@ -88,4 +88,4 @@ export const Image = styled.img`
   width: 15%;
   height: auto;
   margin-right: 3%;
-`;
+`

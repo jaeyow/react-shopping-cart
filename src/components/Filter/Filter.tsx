@@ -1,38 +1,38 @@
-import { useProducts } from 'contexts/products-context';
+import { useProducts } from 'contexts/products-context'
 
-import * as S from './style';
+import * as S from './style'
 
-export const availableSizes = ['XS', 'S', 'M', 'ML', 'L', 'XL', 'XXL'];
+export const availableSizes = ['XS', 'S', 'M', 'ML', 'L', 'XL', 'XXL']
 
 const Filter = () => {
-  const { filters, filterProducts } = useProducts();
+    const { filters, filterProducts } = useProducts()
 
-  const selectedCheckboxes = new Set(filters);
+    const selectedCheckboxes = new Set(filters)
 
-  const toggleCheckbox = (label: string) => {
-    if (selectedCheckboxes.has(label)) {
-      selectedCheckboxes.delete(label);
-    } else {
-      selectedCheckboxes.add(label);
+    const toggleCheckbox = (label: string) => {
+        if (selectedCheckboxes.has(label)) {
+            selectedCheckboxes.delete(label)
+        } else {
+            selectedCheckboxes.add(label)
+        }
+
+        const filters = Array.from(selectedCheckboxes) as []
+
+        filterProducts(filters)
     }
 
-    const filters = Array.from(selectedCheckboxes) as [];
+    const createCheckbox = (label: string) => (
+      <S.Checkbox label={label} handleOnChange={toggleCheckbox} key={label} />
+    )
 
-    filterProducts(filters);
-  };
+    const createCheckboxes = () => availableSizes.map(createCheckbox)
 
-  const createCheckbox = (label: string) => (
-    <S.Checkbox label={label} handleOnChange={toggleCheckbox} key={label} />
-  );
+    return (
+      <S.Container>
+          <S.Title>Sizes:</S.Title>
+          {createCheckboxes()}
+        </S.Container>
+    )
+}
 
-  const createCheckboxes = () => availableSizes.map(createCheckbox);
-
-  return (
-    <S.Container>
-      <S.Title>Sizes:</S.Title>
-      {createCheckboxes()}
-    </S.Container>
-  );
-};
-
-export default Filter;
+export default Filter

@@ -1,6 +1,6 @@
-import styled from 'styled-components/macro';
+import styled from 'styled-components/macro'
 
-export const OctoArm = styled.path``;
+export const OctoArm = styled.path``
 
 export const Container = styled.a`
   &:hover ${OctoArm} {
@@ -29,4 +29,4 @@ export const Container = styled.a`
       animation: octocat-wave 560ms ease-in-out;
     }
   }
-`;
+`

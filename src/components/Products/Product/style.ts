@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled from 'styled-components/macro'
 
 export const BuyButton = styled.button`
   background-color: ${({ theme }) => theme.colors.primary};
@@ -14,15 +14,15 @@ export const BuyButton = styled.button`
   &:focus-visible {
     outline: 3px solid ${({ theme }) => theme.colors.secondary};
   }
-`;
+`
 
-interface IImage {
-  alt: string;
+type IImage = {
+    alt: string;
 }
-export const Image = styled.div<IImage>``;
+export const Image = styled.div<IImage>``
 
-interface IContainer {
-  sku: number | string;
+type IContainer = {
+    sku: number | string;
 }
 export const Container = styled.div<IContainer>`
   position: relative;
@@ -42,7 +42,7 @@ export const Container = styled.div<IContainer>`
     height: 270px;
     position: relative;
     background-image: ${({ sku }) =>
-      `url(${require(`static/products/${sku}-1-product.webp`)})`};
+        `url(${require(`static/products/${sku}-1-product.webp`)})`};
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -73,7 +73,7 @@ export const Container = styled.div<IContainer>`
       background-color: ${({ theme }) => theme.colors.secondary};
     }
   }
-`;
+`
 
 export const Stopper = styled.div`
   position: absolute;
@@ -85,7 +85,7 @@ export const Stopper = styled.div`
   background-color: ${({ theme }) => theme.colors.primary};
   cursor: default;
   z-index: 1;
-`;
+`
 
 export const Title = styled.p`
   position: relative;
@@ -102,7 +102,7 @@ export const Title = styled.p`
     left: 50%;
     margin-left: -10px;
   }
-`;
+`
 
 export const Price = styled.div`
   height: 60px;
@@ -113,7 +113,7 @@ export const Price = styled.div`
       margin-left: 5px;
     }
   }
-`;
+`
 
 export const Val = styled.p`
   margin: 0;
@@ -121,9 +121,9 @@ export const Val = styled.p`
     font-size: 1.5em;
     margin-left: 5px;
   }
-`;
+`
 
 export const Installment = styled.p`
   margin: 0;
   color: #9c9b9b;
-`;
+`

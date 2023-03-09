@@ -1,5 +1,5 @@
-import styled from 'styled-components/macro';
-import flag from './nl-flag.png';
+import styled from 'styled-components/macro'
+import flag from './nl-flag.png'
 
 export const Container = styled.div`
   box-sizing: border-box;
@@ -17,12 +17,12 @@ export const Container = styled.div`
   z-index: 9;
 
   @media only screen and (min-width: ${({ theme: { breakpoints } }) =>
-      breakpoints.tablet}) {
+        breakpoints.tablet}) {
     top: -5px;
     height: 90px;
     position: absolute;
   }
-`;
+`
 
 export const Thumbnail = styled.div`
   display: flex;
@@ -36,7 +36,7 @@ export const Thumbnail = styled.div`
     width: 55px;
     height: 55px;
   }
-`;
+`
 
 export const Flag = styled.span`
   display: inline-block;
@@ -47,14 +47,14 @@ export const Flag = styled.span`
   background-size: 100%;
   background-position: center;
   margin-left: 4px;
-`;
+`
 
 export const Description = styled.div`
   padding: 10px 10px 0 0px;
   width: 80%;
 
   @media only screen and (min-width: ${({ theme: { breakpoints } }) =>
-      breakpoints.tablet}) {
+        breakpoints.tablet}) {
     padding: 10px 5px 0 0px;
   }
 
@@ -73,4 +73,4 @@ export const Description = styled.div`
   a:visited {
     color: #000;
   }
-`;
+`

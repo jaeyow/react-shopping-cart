@@ -1,5 +1,5 @@
-import mockProducts from './products';
-import mockCartProducts from './cart-products';
-import mockCartTotal from './cart-total';
+import mockProducts from './products'
+import mockCartProducts from './cart-products'
+import mockCartTotal from './cart-total'
 
-export { mockProducts, mockCartProducts, mockCartTotal };
+export { mockProducts, mockCartProducts, mockCartTotal }

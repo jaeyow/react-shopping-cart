@@ -1,14 +1,14 @@
-import { render } from '@testing-library/react';
+import { render } from '@testing-library/react'
 
-import Loader from '.';
+import Loader from '.'
 
 describe('[components] - Loader', () => {
-  const setup = () => {
-    return render(<Loader />);
-  };
+    const setup = () => {
+        return render(<Loader />)
+    }
 
-  test('should render correctly', () => {
-    const view = setup();
-    expect(view).toMatchSnapshot();
-  });
-});
+    test('should render correctly', () => {
+        const view = setup()
+        expect(view).toMatchSnapshot()
+    })
+})

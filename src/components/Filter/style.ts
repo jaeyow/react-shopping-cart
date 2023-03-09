@@ -1,8 +1,8 @@
-import styled from 'styled-components/macro';
+import styled from 'styled-components/macro'
 
-import CB from 'commons/Checkbox';
+import CB from 'commons/Checkbox'
 
-export const Container = styled.div``;
+export const Container = styled.div``
 
 export const Checkbox = styled(CB)`
   display: inline-block;
@@ -73,9 +73,9 @@ export const Checkbox = styled(CB)`
       border: 1px solid transparent;
     }
   }
-`;
+`
 
 export const Title = styled.h4`
   margin-top: 2px;
   margin-bottom: 20px;
-`;
+`

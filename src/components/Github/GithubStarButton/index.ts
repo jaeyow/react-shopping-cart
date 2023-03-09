@@ -1,1 +1,1 @@
-export { default } from './GithubStarButton';
+export { default } from './GithubStarButton'
