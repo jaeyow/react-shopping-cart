@@ -1,2 +1,6 @@
 export { ProductsProvider } from './ProductsContextProvider'
 export { default as useProducts } from './useProducts'
+export { TrendingProductsContextProvider } from './TrendingProductsContextProvider'
+export { default as useTrendingProducts } from './useTrendingProducts'
+export { RecommendedProductsContextProvider } from './RecommendedProductsContextProvider'
+// export { default as useRecommendedProducts } from './useRecommendedProducts'

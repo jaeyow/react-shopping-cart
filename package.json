@@ -59,13 +59,34 @@
       "react-app/jest"
     ],
     "rules": {
-      "semi": ["error", "never"],
+      "semi": [
+        "error",
+        "never"
+      ],
       "@typescript-eslint/no-explicit-any": "warn",
-      "@typescript-eslint/semi":  ["error", "never"],
+      "@typescript-eslint/semi": [
+        "error",
+        "never"
+      ],
       "indent": "off",
-      "@typescript-eslint/consistent-type-definitions": ["warn", "type"],
-      "@typescript-eslint/consistent-type-imports": ["warn", {"prefer": "no-type-imports"}],
-      "@typescript-eslint/member-delimiter-style": ["error", {"singleline":{"delimiter": "semi"}} ]
+      "@typescript-eslint/consistent-type-definitions": [
+        "warn",
+        "type"
+      ],
+      "@typescript-eslint/consistent-type-imports": [
+        "warn",
+        {
+          "prefer": "no-type-imports"
+        }
+      ],
+      "@typescript-eslint/member-delimiter-style": [
+        "error",
+        {
+          "singleline": {
+            "delimiter": "semi"
+          }
+        }
+      ]
     }
   },
   "browserslist": {
