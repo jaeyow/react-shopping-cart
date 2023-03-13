@@ -1,36 +1,36 @@
-import { useProducts } from 'contexts/products-context'
+import { FC } from 'react'
 
 import * as S from './style'
 
 export const availableSizes = ['XS', 'S', 'M', 'ML', 'L', 'XL', 'XXL']
 
-const Filter = () => {
-    const { filters, filterProducts } = useProducts()
+type Props = {
+  sizesFilter: boolean[];
+  setSizesFilter: React.Dispatch<React.SetStateAction<boolean[]>>;
+}
 
-    const selectedCheckboxes = new Set(filters)
-
-    const toggleCheckbox = (label: string) => {
-        if (selectedCheckboxes.has(label)) {
-            selectedCheckboxes.delete(label)
-        } else {
-            selectedCheckboxes.add(label)
-        }
-
-        const filters = Array.from(selectedCheckboxes) as []
-
-        filterProducts(filters)
-    }
-
-    const createCheckbox = (label: string) => (
-      <S.Checkbox label={label} handleOnChange={toggleCheckbox} key={label} />
-    )
-
-    const createCheckboxes = () => availableSizes.map(createCheckbox)
+const Filter: FC<Props> = ({sizesFilter, setSizesFilter}) => {
+    const handleOnChange = (position: number) => {
+        const updatedCheckedState = sizesFilter.map((item, index) =>
+        position === index ? !item : item
+        )
+    
+        // console.log(updatedCheckedState)
+        setSizesFilter(updatedCheckedState)
+    
+      }
 
     return (
       <S.Container>
           <S.Title>Sizes:</S.Title>
-          {createCheckboxes()}
+          {
+            availableSizes?.map((item, index) => {
+                return (
+                    <S.Checkbox label={item} handleOnChange={() => {handleOnChange(index)}} key={item} />
+                )
+                
+            })
+          }
         </S.Container>
     )
 }
