@@ -6,6 +6,7 @@ import { ThemeProvider } from 'commons/style/styled-components'
 import { theme } from 'commons/style/theme'
 import GlobalStyle from 'commons/style/global-style'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
 /* Context Providers */
 import { CartProvider } from 'contexts/cart-context'
@@ -26,5 +27,6 @@ container.render(
                     </CartProvider>
             </ThemeProvider>
         </StrictMode>
+        <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
 )
