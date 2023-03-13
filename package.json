@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@tanstack/react-query": "^4.26.1",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.5.0",
@@ -59,13 +60,34 @@
       "react-app/jest"
     ],
     "rules": {
-      "semi": ["error", "never"],
+      "semi": [
+        "error",
+        "never"
+      ],
       "@typescript-eslint/no-explicit-any": "warn",
-      "@typescript-eslint/semi":  ["error", "never"],
+      "@typescript-eslint/semi": [
+        "error",
+        "never"
+      ],
       "indent": "off",
-      "@typescript-eslint/consistent-type-definitions": ["warn", "type"],
-      "@typescript-eslint/consistent-type-imports": ["warn", {"prefer": "no-type-imports"}],
-      "@typescript-eslint/member-delimiter-style": ["error", {"singleline":{"delimiter": "semi"}} ]
+      "@typescript-eslint/consistent-type-definitions": [
+        "warn",
+        "type"
+      ],
+      "@typescript-eslint/consistent-type-imports": [
+        "warn",
+        {
+          "prefer": "no-type-imports"
+        }
+      ],
+      "@typescript-eslint/member-delimiter-style": [
+        "error",
+        {
+          "singleline": {
+            "delimiter": "semi"
+          }
+        }
+      ]
     }
   },
   "browserslist": {

@@ -12,6 +12,14 @@ export type IProduct = {
     isFreeShipping: boolean;
 }
 
+export type ITrendingProduct = {
+    order: number;
+} & IProduct
+
+export type IRecommendedProduct = {
+    order: number;
+} & IProduct
+
 export type ICartProduct = {
     quantity: number;
 } & IProduct
@@ -27,5 +35,17 @@ export type ICartTotal = {
 export type IGetProductsResponse = {
     data: {
         products: IProduct[];
+    };
+}
+
+export type IGetTrendingProductsResponse = {
+    data: {
+        products: ITrendingProduct[];
+    };
+}
+
+export type IGetRecommendedProductsResponse = {
+    data: {
+        products: IRecommendedProduct[];
     };
 }
