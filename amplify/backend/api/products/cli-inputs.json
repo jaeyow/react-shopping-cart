@@ -9,6 +9,23 @@
         "auth": ["create", "read", "update", "delete"],
         "guest": ["read"]
       }
+    },
+    "/trending-items": {
+      "name": "/trending-items",
+      "lambdaFunction": "getProducts",
+      "permissions": {
+        "setting": "private",
+        "auth": ["create", "read", "update", "delete"]
+      }
+    },
+    "/recommended-items": {
+      "name": "/recommended-items",
+      "lambdaFunction": "getProducts",
+      "permissions": {
+        "setting": "protected",
+        "auth": ["create", "read", "update", "delete"],
+        "guest": ["read"]
+      }
     }
   }
 }

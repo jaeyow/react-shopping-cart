@@ -19,7 +19,7 @@
       "function": {
         "getProducts": {
           "deploymentBucketName": "amplify-cevopersonalize-staging-05445-deployment",
-          "s3Key": "amplify-builds/getProducts-30396c49697877623961-build.zip"
+          "s3Key": "amplify-builds/getProducts-52384f694e74344b3749-build.zip"
         }
       },
       "api": {
