@@ -1,0 +1,30 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cevopersonalize-staging-05445-authRole",
+      "UnauthRoleArn": "arn:aws:iam::590312749310:role/amplify-cevopersonalize-staging-05445-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::590312749310:role/amplify-cevopersonalize-staging-05445-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-cevopersonalize-staging-05445-deployment",
+      "UnauthRoleName": "amplify-cevopersonalize-staging-05445-unauthRole",
+      "StackName": "amplify-cevopersonalize-staging-05445",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:590312749310:stack/amplify-cevopersonalize-staging-05445/fc793a60-be14-11ed-aa6b-0a2661c607f6",
+      "AmplifyAppId": "d2koe94iemyxa2",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-cevopersonalize-staging-05445-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "auth": {
+        "cevopersonalize3922fdd3": {}
+      },
+      "function": {
+        "getProducts": {
+          "deploymentBucketName": "amplify-cevopersonalize-staging-05445-deployment",
+          "s3Key": "amplify-builds/getProducts-30396c49697877623961-build.zip"
+        }
+      },
+      "api": {
+        "products": {}
+      }
+    }
+  }
+}
